@@ -1,11 +1,11 @@
 import React from "react";
-import Projects from "./components/Projects";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 function App() {
   return (
   <div>
-   <Projects />
+   <Main />
    <Footer />
   </div>
   )

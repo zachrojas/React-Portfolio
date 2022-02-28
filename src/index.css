@@ -1,0 +1,153 @@
+:root {
+    --textcolor: rgb(0, 0, 0);
+    --bgcolor0: #a0a0a0;
+    --bgcolor1: #000000;
+    --bgcolor2: #000000;
+    --bgcolor3: #FCA311;
+  }
+  
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.3;
+      background: var(--bgcolor0);
+    }
+  
+    /* Navigation */
+    
+    .nav {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      padding: 1%;
+      background-color: var(--bgcolor2);
+      color: white;
+      flex-direction: column;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      min-width: 30px;
+    }
+  
+    nav li {
+      padding-inline: 10px;
+      justify-content: space-between;
+    }
+      
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+    }
+  
+    nav a:hover {
+      color:var(--bgcolor3);
+    }
+  
+    /* About Me */
+  
+    intro {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 10px; 
+      color:var(--textcolor);
+    }
+  
+    intro img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+      width: 75%;
+      padding: 10px;
+      position: relative;
+      flex-wrap: wrap;
+      float: left;
+    }
+  
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    /* Portfolio Cards, Footer */
+  
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+    }
+    
+    h2 {
+      font-size: 150%;
+      margin-bottom: 10px;
+    }
+  
+    .card {
+    height: 400px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    border: 4px solid;
+    margin-bottom: 20px;
+    }
+  
+    .card:hover {
+      color: var(--bgcolor3);
+      border-width: 3px;
+    }
+  
+    #social img {
+      opacity: 50%;
+    }
+    #social:hover img {
+      opacity:100%;  
+    }
+  
+    @media screen and (max-width: 992px) {
+      .card {
+        width: 50%;
+      }
+      header {
+        width: 50%;
+      }
+      nav ul {
+        width: 100%;
+      }
+      nav a {
+        width: 100%;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+      header {
+        width: 100%;
+      }
+      nav ul {
+        width: 100%;
+      }
+      nav a {
+        width: 100%;
+      }
+    }
+  
+    .contact {
+      align-items: center;
+    }
